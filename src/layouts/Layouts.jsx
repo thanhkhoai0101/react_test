@@ -1,8 +1,6 @@
-import {useState} from "react";
-import Completed from "./component/Completed.jsx";
+import All from "./component/All.jsx";
 
 const Layouts = () => {
-    const [item,itemChagne]=useState();
 
   return (
       <div className="layouts">
@@ -34,13 +32,13 @@ const Layouts = () => {
               </ul>
               <div className="tab-content" id="myTabContent">
                   <div className="tab-pane fade show active" id="home-tab-pane"
-                       role="tabpanel" aria-labelledby="home-tab" tabIndex="0">All
+                       role="tabpanel" aria-labelledby="home-tab" tabIndex="0"><All/>
                   </div>
                   <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel"
-                       aria-labelledby="profile-tab" tabIndex="0">Active
+                       aria-labelledby="profile-tab" tabIndex="0">
                   </div>
                   <div className="tab-pane fade" id="contact-tab-pane" role="tabpanel"
-                       aria-labelledby="contact-tab" tabIndex="0"><Completed/>
+                       aria-labelledby="contact-tab" tabIndex="0">
                   </div>
               </div>
           </div>
